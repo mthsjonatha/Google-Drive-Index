@@ -776,15 +776,15 @@ function file_pdf(path) {
   <div class="card-body text-center">
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   </div>
-  <embed src="http://docs.google.com/gview?embedded=true&url=${inline_url}" type="application/pdf" width="100%" height="100%"></embed>
+  <embed src="http://docs.google.com/gview?embedded=true&url=${inline_url}" width="80%" height="600px"></embed>
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
   `;
-  $('#content').html(content);
-	/*$('#content').removeClass('mdui-container').addClass('mdui-container-fluid').css({
+  //$('#content').html(content);
+	$('#content').removeClass('mdui-container').addClass('mdui-container-fluid').css({
 		padding: 0
-	}).html(content); */
+	}).html(content);
 }
 
 // image display
