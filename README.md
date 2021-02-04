@@ -1,117 +1,58 @@
-# Google Personal/Shared Drive Index [![](https://data.jsdelivr.com/v1/package/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index/badge)](https://www.jsdelivr.com/package/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index)
+# Indexador Studenten [![](https://data.jsdelivr.com/v1/package/gh/projetostudenten/Google-Drive-Index/badge)](https://www.jsdelivr.com/package/gh/projetostudenten/Google-Drive-Index)
 
-* Supports Both My and Team/Shared Drives with Dark Mode.
-* Development Paused due to busy schedule.
+O Indexador Studenten é uma plataforma do projeto Studenten mit Erfolgsbilanz que visa disponibilizar, gratuitamente, aulas, apostilas e arquivos de alta qualidade para estudantes de baixa renda que estão se preparando para o ENEM e outros vestibulares. 
 
-[![Screenshot](https://raw.githubusercontent.com/ParveenBhadooOfficial/Bhadoo-Drive-Index/master/images/beta-light-screenshot.png)](https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index)
+![Logo do Indexador Studenten](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo-preta.png)
 
-[![Screenshot](https://raw.githubusercontent.com/ParveenBhadooOfficial/Bhadoo-Drive-Index/master/images/beta-dark-screenshot.png)](https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index)
+A partir de Fevereiro/2021, o projeto Studenten decidiu encerrar o antigo acesso direto através do Google Drive e concentrar todas as plataformas em um indexador web rápido e intuitivo. Tomamos essa decisão porque, dessa forma, poderemos preservar o anonimato de todos os membros da equipe Studenten, proporcionando-nos mais tranquilidade para continuar as atividades da vida normal.
 
-`Note: The Changes in your workers config can effect later due to cache. Use incognito mode everytime to open the worker URL to overcome that issue.`
+O código deste indexador é open-source e foi derivado de um projeto pré-existente criado por ParveenBhadooOfficial (créditos adiante). Para implementá-lo, utilizamos a plataforma Cloudflare Workers aliada ao Google Drive, o que nos permite fornecer um uplink de qualidade absurda sem pagar por isso. O fork em que mantemos todo este diretório pode ser encontrado [aqui](https://github.com/projetostudenten/Google-Drive-Index).
 
-## Project Website
+## Doe
 
-* [gdi.js.org](https://gdi.js.org) by [js.org](https://js.org)
+Com a sua doação, poderemos aumentar o nosso caixa disponível para a postagem de novos conteúdos. Se você considera que nós temos lhe ajudado a ponto de valermos o seu dinheiro, por favor, considere doar qualquer valor através do PIX.
 
-## Demo Sites
+Nossa chave PIX: ```d8168f3a-a119-49a7-a37c-3963b5fe1f3c```
 
-* [light-demo.ve.workers.dev](https://light-demo.ve.workers.dev)
-* [dark-demo.ve.workers.dev](https://dark-demo.ve.workers.dev)
-* [password-demo.ve.workers.dev](https://password-demo.ve.workers.dev) id and password are `admin` and `admin`
+![Logo do PIX](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo_pix.png)
 
-## How to
+## Perguntas frequentes
 
-* Current Version `2.0.7`
-* Beta Version (Latest) - [generator.driveindex.ga](https://generator.driveindex.ga) (Dark Theme Available)
-* If you want to deploy main drive leave the option ROOT as it is.
-* If you want to deploy your Team Drive/Shared Drive/Folder then copy the ID and replace it with ROOT.
-* Eg. if you open this shared drive `https://drive.google.com/drive/u/0/folders/0AOM2i7MQiuWIUk9PVA` - `0AOM2i7MQiuWIUk9PVA` is its ID.
-* Authenticate and copy the code from Google and paste it into Authorization Code Box.
-* Click on Get Code to Generate Code and Copy it for later use.
-* Now Create Cloudflare account and verify email or login with existing account.
-* Find Workers and Open it.
-* Create your sub-domain or continue if already done.
-* Select the Free Plan.
-* Click on Create a Worker.
-* You can rename the workers at top of the page.
-* Now paste the code you copied before.
-* Click on Save and Deploy.
-* Done. (May take time for some users due to new account or cache issues)
-* [Watch Video](https://www.youtube.com/watch?v=8WMddzVX1Dw&feature=youtu.be)
+* Posso enviar esse site para meus amigos?
 
-## Basic Config
+Sim. O indexador Studenten é gratuito e público.
 
-````
-"roots": [{
-	"id": "root", // shared drive id or folder id
-	"name": "Cloud Zero", // name for drive
-	"user": "admin", // username for id pass
-	"pass": "admin", // password for id pass (works also if their is no username, keep blank if no auth is needed.
-	"protect_file_link": true // protects the direct links when true.
-}],
-````
+* Encontrei um erro no site. Como faço para reportá-lo para a equipe Studenten?
 
-## Brand Customization and Dark Mode
+No menu principal, há um link "Relatar problema". Clique nele e preencha o formulário.
 
-* In Latest Release, you can rebrand the Index as per your needs.
-* Line 57 will help you select light or dark theme where false is light and true will be dark theme.
-* After that each line has its own custom feature. Edit as per your needs.
-* You can remove credit option but we request you not to.
-* See Below code to understand Customization.
-````
-const uiConfig = {
-	"theme": "bhadoo_bootstrap", // Change doesn't works
-	"dark_mode": true, // switch between light or dark themes
-	"version": "2.0.7", // don't touch this one. get latest code using generator at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
-	"logo_image": true, // true if you're using image link in next option.
-	"logo_height": "", // only if logo_image is true
-	"logo_width": "100px", // only if logo_image is true
-	"logo_link_name": "https://cdn.jsdelivr.net/gh/jscdn/svg@1.0.3/bhadoo-cloud-logo-white.svg", // if logo is true then link otherwise just text for name
-	"contact_link": "https://t.telegram.ind.in/BhadooDiscussion", // Link to Contact Button on Menu
-	"copyright_year": "2050", // year of copyright, can be anything like 2015 - 2020 or just 2020
-	"company_name": "Bhadoo Cloud", // Name next to copyright
-	"company_link": "https://t.telegram.ind.in/BhadooCloud", // link of copyright name
-	"credit": true, // Set this to true to give us credit
-	"display_size": true, // Set this to false to hide display file size
-	"display_time": false, // Set this to false to hide display modified time for folder and files
-	"disable_player": false // Set this to true to hide audio and video players
-};
-````
+* Como faço para encontrar um curso?
 
-## Search Limitations
+Utilize a barra de pesquisa para procurar o que deseja. Mas atenção: a pesquisa só funciona no drive atual. Ou seja, se você está no drive "Arquivos Principais", a pesquisa só irá lhe mostrar os arquivos que estão presentes no drive "Arquivos Principais". Portanto, se você não encontrar o que está procurando em um drive, você pode selecionar o outro no menu "Drives disponíveis" e repetir a pesquisa.
 
-* Search only works if you use Shared Drive ID or root.
-* Search won't work or the bar won't appear if you're using Folder ID inside from root or Shared Drive.
+* Posso obter acesso aos arquivos diretamente no Google Drive?
 
-## Known Bugs
+NÃO. Gentilmente pedimos para que você não insista, nem nos envie mensagens pedindo acesso ao Google Drive. Estamos fazendo isso para previnir problemas futuros. Além disso, manter os arquivos no site nos possibilita a manutenção do anonimato da equipe Studenten.
 
-* Light Mode Text Hover Underline needs to be fixed.
+## Equipe Studenten
 
-## Upcoming Changes
+* El Patrón (ADM geral do projeto)
+* Raven Claw (ADM fundadora do projeto, responsável pela TI)
+* Davi (moderador)
+* Darwin (moderador)
+* Prince Andrews (moderador)
+* zFarinha (moderador)
+* Thamires (moderadora)
+* Gigi (moderadora)
+* Ana Paula (moderadora)
+* Marianna (moderadora)
 
-* Clear Path to Navigate inside Previous Folders (currenty shows inside menu).
-* Icons from other Index for better view.
-* Adding Links to other Indexes.
-* Adding More Features from other Indexes.
-* Click to Copy Download Button
+![Equipe Studenten](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/team.png)
 
-## Other Indexes
+## Créditos
 
-* [Edited Version](https://gist.github.com/ParveenBhadooOfficial/52ffbfcfa24e53f8afad4851618307fc) based on [goindex-theme-acrou](https://github.com/Achrou/goindex-theme-acrou)
-
-## Credits
-
-* Source: [maple3142](https://github.com/maple3142/GDIndex)
-* Source: [yanzai](https://github.com/yanzai/goindex)
-* New Design: [Bootstrap](https://getbootstrap.com)
-* Cloudflare: Workers
-
-## Disclaimer
-
-* These Index's are written by someone else, possibly by donva and [maple3142](https://github.com/maple3142/GDIndex).
-* Beta Version is redesigned using Bootstrap from Alpha Version by @ParveenBhadooOfficial.
-* This Repo was imported from [yanzai](https://github.com/yanzai/goindex) and then modified for personal use. After requests from many users made compatible with user requirements.
-
-## Support this Project
-
-[![Support](https://cdn.buymeacoffee.com/buttons/v2/default-white.png)](https://www.buymeacoffee.com/bhadoo)
+* Código-fonte original: [ParveenBhadooOfficial](https://github.com/ParveenBhadooOfficial/Google-Drive-Index)
+* Novo design: [Bootstrap](https://getbootstrap.com)
+* Ícones: [Fonteawesome](https://fontawesome.com/)
+* Imagem do Logo: [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect)
+* Cloudflare Workers
