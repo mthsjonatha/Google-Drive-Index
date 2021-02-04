@@ -781,9 +781,10 @@ function file_pdf(path) {
   </div>
   </div>
   `;
-	$('#content').removeClass('mdui-container').addClass('mdui-container-fluid').css({
+  $('#content').html(content);
+	/*$('#content').removeClass('mdui-container').addClass('mdui-container-fluid').css({
 		padding: 0
-	}).html(content);
+	}).html(content); */
 }
 
 // image display
