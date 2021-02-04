@@ -16,7 +16,7 @@ function init() {
 </div>
 <br>
 <script>
-	function darkLight(){"dark"!=localStorage.toggled?($("head").append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@v2.0.7.13/css/dark-mode.css" type="text/css" />'),localStorage.toggled="dark"):($('link[href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@v2.0.7.13/css/dark-mode.css"]').remove(),localStorage.toggled="")}$("#main").toggleClass(localStorage.toggled),"dark"==localStorage.toggled&&$("head").append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@v2.0.7.13/css/dark-mode.css" type="text/css" />');
+	function darkLight(){"dark"!=localStorage.toggled?($("head").append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@v2.0.7.20/css/dark-mode.css" type="text/css" />'),localStorage.toggled="dark"):($('link[href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@v2.0.7.20/css/dark-mode.css"]').remove(),localStorage.toggled="")}$("#main").toggleClass(localStorage.toggled),"dark"==localStorage.toggled&&$("head").append('<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@v2.0.7.20/css/dark-mode.css" type="text/css" />');
 </script>
 <div class="darkmode-toggle" onclick="darkLight()">🌓</div>
 <footer class="text-muted"> <div class="container"> ${UI.credit ? '<p>Construído com <i class="fa fa-heart" title="amor" style="color: #dc3545!important;"></i> e <i class="fa fa-coffee" title="café" style="color: #ffc107!important;"></i> pela <a href="https://github.com/projetostudenten/Google-Drive-Index" target="_blank">Equipe Studenten</a> com a ajuda de outros programas Open Source.</p>' : ''} <p>© ${UI.copyright_year} - ${UI.company_name} . <a href="https://www.youtube.com/watch?v=LXilEPmkoQY" target="_blank">Cópia não é roubo</a>.</p> 
@@ -782,7 +782,7 @@ function file_pdf(path) {
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   </div>
 
-  <object data-v-59e039ae="" data="${inline_url}" type="application/pdf" name="file.pdf">
+  <object data-v-59e039ae="" data="http://docs.google.com/gview?embedded=true&url=${inline_url}" type="application/pdf" name="file.pdf">
   	<embed data-v-59e039ae="" src="${inline_url}" type="application/pdf">
   </object>
   
