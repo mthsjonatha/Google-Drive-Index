@@ -656,7 +656,7 @@ function file(path) {
 		return file_others(path);
 	}
 
-	if ('pdf' === ext) return file_pdf(path);
+	if ('|pdf|docx|docm|dot|dotx|dotm|rtf|odt|xlsx|xlsm|xlt|xltx|xltm|ods|csv|tsv|tab|pptx|pptm|pps|ppsx|ppsm|pot|potx|potm|odp|wmf|emf|doc|xls|ppt|' === ext) return file_pdf(path);
 }
 
 // Document display |zip|.exe/others direct downloads
@@ -765,7 +765,7 @@ function file_audio(path) {
 	$('#content').html(content);
 }
 
-// Document display pdf  pdf
+// Document display |pdf|docx|docm|dot|dotx|dotm|rtf|odt|xlsx|xlsm|xlt|xltx|xltm|ods|csv|tsv|tab|pptx|pptm|pps|ppsx|ppsm|pot|potx|potm|odp|wmf|emf|doc|xls|ppt|
 function file_pdf(path) {
 	const url = window.location.origin + path;
 	const inline_url = `${url}?inline=true`
@@ -775,8 +775,8 @@ function file_pdf(path) {
   <div class="card">
   <div class="card-body text-center">
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
-  <embed src="${inline_url}" type="application/pdf" width="80%" height="100%" />
   </div>
+  <embed src="http://docs.google.com/gview?embedded=true&url=${inline_url}" type="application/pdf" width="100%" height="100%"></embed>
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
