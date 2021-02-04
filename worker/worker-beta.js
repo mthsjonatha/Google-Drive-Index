@@ -1,10 +1,10 @@
 /**
-* A Script Redesigned by Parveen Bhadoo from GOIndex at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
-*/
+ * A Script Redesigned by Parveen Bhadoo from GOIndex at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
+ */
 const authConfig = {
-	"siteName": "Bhadoo Drive Index", // Website name
-	"client_id": "58094879805-4654k2k5nqdid5bavft7fvea5u9po0t1.apps.googleusercontent.com",
-	"client_secret": "ZNPZ-vS6N9Zjsyb_sNMZmXHL",
+	"siteName": "Studenten mit Erfolgsbilanz", // Website name
+	"client_id": "",
+	"client_secret": "",
 	"refresh_token": "", // Authorize token
 	/**
 	 * Set up multiple Drives to display; add multiples by format
@@ -20,12 +20,20 @@ const authConfig = {
 	 * [Note] For the disk whose id is set to the subfolder id, the search function will not be supported (it does not affect other disks).
 	 */
 	"roots": [{
-		"id": "",
-		"name": "Drive Index",
-		"user": "",
-		"pass": "",
-		"protect_file_link": false
-	}],
+			"id": "0ALDSNYIDIxvcUk9PVA",
+			"name": "Arquivos Principais",
+			"user": "",
+			"pass": "",
+			"protect_file_link": false
+		},
+		{
+			"id": "0AKX4zntvxFxFUk9PVA",
+			"name": "Contribuições",
+			"user": "",
+			"pass": "",
+			"protect_file_link": false
+		}
+	],
 	/**
 	 * The number displayed on each page of the file list page. [Recommended setting value is between 100 and 1000];
 	 * If the setting is greater than 1000, it will cause an error when requesting drive api;
@@ -56,20 +64,20 @@ const authConfig = {
  */
 const uiConfig = {
 	"theme": "bhadoo_bootstrap", // Change doesn't works
-	"dark_mode": true, // switch between light or dark themes
 	"version": "2.0.7", // don't touch this one. get latest code using generator at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
+	"dark_mode": false;
 	"logo_image": false, // true if you're using image link in next option.
 	"logo_height": "", // only if logo_image is true
 	"logo_width": "100px", // only if logo_image is true
-	"logo_link_name": "Bhadoo Drive Index", // if logo is true then link otherwise just text for name
-	"contact_link": "https://t.telegram.ind.in/BhadooCloud", // Link to Contact Button on Menu
-	"copyright_year": "2050", // year of copyright, can be anything like 2015 - 2020 or just 2020
-	"company_name": "Bhadoo Cloud", // Name next to copyright
-	"company_link": "https://t.telegram.ind.in/BhadooCloud", // link of copyright name
-	"credit": true, // Set this to true to give us credit
+	"logo_link_name": "Studenten mit Erfolgsbilanz", // if logo is true then link otherwise just text for name
+	"contact_link": "", // Link to Contact Button on Menu
+	"copyright_year": "2021", // year of copyright, can be anything like 2015 - 2020 or just 2020
+	"company_name": "Studenten mit Erfolgsbilanz", // Name next to copyright
+	"company_link": "", // link of copyright name
+	"credit": false, // Set this to true to give us credit
 	"display_size": true, // Set this to false to hide display file size
 	"display_time": false, // Set this to false to hide display modified time for folder and files
-        "disable_player": false // Set this to true to hide audio and video players
+	"disable_player": false // Set this to true to hide audio and video players
 };
 
 /**
@@ -113,29 +121,38 @@ function html(current_drive_order = 0, model = {}) {
 <html>
 <head>
   <meta charset="utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFJ5YRC36Q"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RFJ5YRC36Q');
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-  <title>${authConfig.siteName}</title>
-  <meta name="robots" content="noindex" />
-  <link rel="icon" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/images/favicon.ico">
+  <title>Studenten mit Erfolgsbilanz</title>
+  <meta name="description" content="O Studenten mit Erfolgsbilanz é um indexador gratuito e ilimitado. Estude para o ENEM e principais vestibulares com conteúdo de qualidade. Cópia não é roubo.">
+  <link rel="icon" href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/images/favicon.png">
   <script>
     window.drive_names = JSON.parse('${JSON.stringify(authConfig.roots.map(it => it.name))}');
     window.MODEL = JSON.parse('${JSON.stringify(model)}');
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/css/mdui-style.min.css">
-  <script src="https://cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelementplayer.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelement-and-player.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/css/bootstrap/${uiConfig.dark_mode ? 'dark' : 'light'}.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/css/mdui-style.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/dist/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/plyr/plyr.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/plyr/plyr.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/css/style.min.css">
   <style>${uiConfig.display_size ? '' : '.csize{display:none;}'}${uiConfig.display_time ? '' : '.cmtime{display:none;}'}</style>
-  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/js/app.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/js/mdui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/js/mdui.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/markdown-it@10.0.0/dist/markdown-it.min.js"></script>
 </head>
-<body>
+<body id="main">
 </body>
-<script src="https://cdn.jsdelivr.net/gh/ParveenBhadooOfficial/Bhadoo-Drive-Index@${uiConfig.version}/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/projetostudenten/Google-Drive-Index@${uiConfig.version}/js/bootstrap.min.js"></script>
 </html>`;
 };
 
@@ -165,7 +182,6 @@ async function handleRequest(request) {
 	}
 
 	// From path extract from drive order
-	// 并根据 drive order 获取对应的 gd instance
 	let gd;
 	let url = new URL(request.url);
 	let path = url.pathname;
