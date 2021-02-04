@@ -64,8 +64,8 @@ const authConfig = {
  */
 const uiConfig = {
 	"theme": "bhadoo_bootstrap", // Change doesn't works
-	"version": "2.0.7", // don't touch this one. get latest code using generator at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
-	"dark_mode": false;
+	"version": "2.0.7.01", // don't touch this one. get latest code using generator at https://github.com/ParveenBhadooOfficial/Bhadoo-Drive-Index
+	"dark_mode": false,
 	"logo_image": false, // true if you're using image link in next option.
 	"logo_height": "", // only if logo_image is true
 	"logo_width": "100px", // only if logo_image is true
