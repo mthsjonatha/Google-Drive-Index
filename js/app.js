@@ -782,8 +782,8 @@ function file_pdf(path) {
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   </div>
 
-  <object data-v-59e039ae="" data="http://docs.google.com/gview?embedded=true&url=${inline_url}" type="application/pdf" name="file.pdf">
-  	<embed data-v-59e039ae="" src="${inline_url}" type="application/pdf">
+  <object class="embed-responsive" data-v-59e039ae="" data="http://docs.google.com/gview?embedded=true&url=${inline_url}" type="application/pdf" name="file.pdf">
+  	<embed class="embed-responsive" data-v-59e039ae="" src="${inline_url}" type="application/pdf">
   </object>
   
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
