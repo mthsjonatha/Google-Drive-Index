@@ -633,6 +633,8 @@ function get_file(path, file, callback) {
 function file(path) {
 	var name = path.split('/').pop();
 	var ext = name.split('.').pop().toLowerCase().replace(`?a=view`, "").toLowerCase();
+	if ('|pdf|docx|docm|dot|dotx|dotm|rtf|odt|xlsx|xlsm|xlt|xltx|xltm|ods|csv|tsv|tab|pptx|pptm|pps|ppsx|ppsm|pot|potx|potm|odp|wmf|emf|doc|xls|ppt|' === ext) return file_pdf(path);
+	
 	if ("|html|php|css|go|java|js|json|txt|sh|md|".indexOf(`|${ext}|`) >= 0) {
 		return file_code(path);
 	}
@@ -655,8 +657,7 @@ function file(path) {
 	else {
 		return file_others(path);
 	}
-
-	if ('|pdf|docx|docm|dot|dotx|dotm|rtf|odt|xlsx|xlsm|xlt|xltx|xltm|ods|csv|tsv|tab|pptx|pptm|pps|ppsx|ppsm|pot|potx|potm|odp|wmf|emf|doc|xls|ppt|' === ext) return file_pdf(path);
+	
 }
 
 // Document display |zip|.exe/others direct downloads
@@ -777,6 +778,7 @@ function file_pdf(path) {
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   </div>
   <embed src="http://docs.google.com/gview?embedded=true&url=${inline_url}" width="80%" height="600px"></embed>
+  
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
   </div>
   </div>
