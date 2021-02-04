@@ -782,7 +782,7 @@ function file_pdf(path) {
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   </div>
 
-  <object data-v-59e039ae="" data="${inline_url}" type="application/pdf" name="file.pdf">
+  <object data-v-59e039ae="" data="${inline_url}" type="application/pdf" name="file.pdf" height="600px">
   	<embed class="embed-responsive" data-v-59e039ae="" src="${inline_url}" type="application/pdf" height="600px">
   </object>
   
