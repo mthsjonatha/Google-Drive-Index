@@ -12,27 +12,19 @@ O código deste indexador é open-source e foi derivado de um projeto pré-exist
 
 Com a sua doação, poderemos aumentar o nosso caixa disponível para a postagem de novos conteúdos. Se você considera que nós temos lhe ajudado a ponto de valermos o seu dinheiro, por favor, considere doar qualquer valor através do PIX.
 
-Nossa chave PIX: ```d8168f3a-a119-49a7-a37c-3963b5fe1f3c```
-
 ![](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo_pix.png?raw=true)
+
+Nossa chave PIX: ```d8168f3a-a119-49a7-a37c-3963b5fe1f3c```
 
 ## Perguntas frequentes
 
-* **Posso enviar esse site para meus amigos?**
+**1) Posso enviar esse site para meus amigos?** Sim. O indexador Studenten é público e gratuito. Quanto mais pessoas tiverem acesso a esse site, mais democrática será a educação em nosso país.
 
-Sim. O indexador Studenten é gratuito e público.
+**2) Encontrei um erro no site. Como faço para reportá-lo para a equipe Studenten?** No menu principal, há um link "Relatar problema". Clique nele e preencha o formulário.
 
-* **Encontrei um erro no site. Como faço para reportá-lo para a equipe Studenten?**
+**3) Como faço para encontrar um curso?** Utilize a barra de pesquisa para procurar o que deseja. Mas atenção: a pesquisa só funciona no drive atual. Ou seja, se você está no drive "Arquivos Principais", a pesquisa só irá lhe mostrar os arquivos que estão presentes no drive "Arquivos Principais". Portanto, se você não encontrar o que está procurando em um drive, você pode selecionar o outro no menu "Drives disponíveis" e repetir a pesquisa.
 
-No menu principal, há um link "Relatar problema". Clique nele e preencha o formulário.
-
-* **Como faço para encontrar um curso?**
-
-Utilize a barra de pesquisa para procurar o que deseja. Mas atenção: a pesquisa só funciona no drive atual. Ou seja, se você está no drive "Arquivos Principais", a pesquisa só irá lhe mostrar os arquivos que estão presentes no drive "Arquivos Principais". Portanto, se você não encontrar o que está procurando em um drive, você pode selecionar o outro no menu "Drives disponíveis" e repetir a pesquisa.
-
-* **Posso obter acesso aos arquivos diretamente no Google Drive?**
-
-NÃO. Gentilmente pedimos para que você não insista, nem nos envie mensagens pedindo acesso ao Google Drive. Estamos fazendo isso para previnir problemas futuros. Além disso, manter os arquivos no site nos possibilita a manutenção do anonimato da equipe Studenten.
+**4) Posso obter acesso aos arquivos diretamente no Google Drive?** NÃO. Pedimos gentilmente que você não nos envie mensagens solicitando acesso ao Google Drive. Encerramos o acesso ao Google Drive com o objetivo de previnir problemas. Ademais, manter os arquivos neste site possibilita a manutenção do anonimato da equipe Studenten. Portanto, não insista.
 
 ## Equipe Studenten
 
