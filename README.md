@@ -2,7 +2,7 @@
 
 O Indexador Studenten é uma plataforma do projeto Studenten mit Erfolgsbilanz que visa disponibilizar, gratuitamente, aulas, apostilas e arquivos de alta qualidade para estudantes de baixa renda que estão se preparando para o ENEM e outros vestibulares. 
 
-<center><img src="https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo-preta.png"></center>
+![](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo-preta.png)
 
 A partir de Fevereiro/2021, o projeto Studenten decidiu encerrar o antigo acesso direto através do Google Drive e concentrar todas as plataformas em um indexador web rápido e intuitivo. Tomamos essa decisão porque, dessa forma, poderemos preservar o anonimato de todos os membros da equipe Studenten, proporcionando-nos mais tranquilidade para continuar as atividades da vida normal.
 
@@ -14,7 +14,7 @@ Com a sua doação, poderemos aumentar o nosso caixa disponível para a postagem
 
 Nossa chave PIX: ```d8168f3a-a119-49a7-a37c-3963b5fe1f3c```
 
-<center><img src="https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo_pix.png"></center>
+![](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo_pix.png)
 
 ## Perguntas frequentes
 
