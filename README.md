@@ -1,12 +1,12 @@
 # Indexador Studenten [![](https://data.jsdelivr.com/v1/package/gh/projetostudenten/Google-Drive-Index/badge)](https://www.jsdelivr.com/package/gh/projetostudenten/Google-Drive-Index)
 
-O Indexador Studenten é uma plataforma do projeto Studenten mit Erfolgsbilanz que visa disponibilizar, gratuitamente, aulas, apostilas e arquivos de alta qualidade para estudantes de baixa renda que estão se preparando para o ENEM e outros vestibulares. 
+O Indexador Studenten é uma plataforma do projeto Studenten mit Erfolgsbilanz que visa disponibilizar gratuitamente aulas, apostilas e arquivos de alta qualidade para estudantes de baixa renda que estão se preparando para o ENEM e outros vestibulares de alta concorrência. 
 
 ![](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo-preta.png?raw=true)
 
-A partir de Fevereiro/2021, o projeto Studenten decidiu encerrar o antigo acesso direto através do Google Drive e concentrar todas as plataformas em um indexador web rápido e intuitivo. Tomamos essa decisão porque, dessa forma, poderemos preservar o anonimato de todos os membros da equipe Studenten, proporcionando-nos mais tranquilidade para continuar as atividades da vida normal.
+Em Fevereiro/2021, o projeto Studenten decidiu encerrar o antigo acesso através do Google Drive e concentrar todas as plataformas em um indexador web rápido e intuitivo. Tomamos essa decisão porque, desta forma, podemos preservar o anonimato de todos os membros da equipe Studenten, proporcionando-nos mais tranquilidade para continuar as atividades da vida normal.
 
-O código deste indexador é open-source e foi derivado de um projeto pré-existente criado por ParveenBhadooOfficial (créditos adiante). Para implementá-lo, utilizamos a plataforma Cloudflare Workers aliada ao Google Drive, o que nos permite fornecer um uplink de qualidade absurda sem pagar por isso. O fork em que mantemos todo este diretório pode ser encontrado [aqui](https://github.com/projetostudenten/Google-Drive-Index).
+O código deste indexador é open-source e foi derivado de um projeto pré-existente criado por ParveenBhadooOfficial (créditos abaixo). Para implementá-lo, utilizamos a plataforma Cloudflare Workers aliada ao Google Drive, o que nos permite fornecer um uplink de qualidade absurda sem pagar por isso. O fork em que mantemos todo este diretório pode ser encontrado [aqui](https://github.com/projetostudenten/Google-Drive-Index).
 
 ## Doe
 
@@ -36,16 +36,13 @@ NÃO. Gentilmente pedimos para que você não insista, nem nos envie mensagens p
 
 ## Equipe Studenten
 
-* El Patrón (ADM geral do projeto)
-* Raven Claw (ADM fundadora do projeto, responsável pela TI)
-* Davi (moderador)
-* Darwin (moderador)
-* Prince Andrews (moderador)
-* zFarinha (moderador)
-* Thamires (moderadora)
-* Gigi (moderadora)
-* Ana Paula (moderadora)
-* Marianna (moderadora)
+**Administradores**
+* El Patrón (Administrador geral) 
+* Raven Claw (Administradora fundadora, responsável pela TI)
+
+**Moderadores**
+
+Davi, Darwin, Prince Andrews, zFarinha, Thamires, Gigi, Ana Paula e Marianna.
 
 ## Créditos
 
