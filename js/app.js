@@ -356,13 +356,21 @@ function append_files_to_list(path, files) {
 			if (is_lastpage_loaded && item.name == "README.md") {
 				get_file(p, item, function (data) {
 					markdown("#readme_md", data);
-          $("img").addClass("img-fluid")
+          			$("img").addClass("img-fluid")
+					
+					//Remove .img-fluid from logo
+		  			let logoElement = document.querySelector('.mainLogo');
+		  			logoElement.classList.remove('img-fluid');
 				});
 			}
 			if (item.name == "HEAD.md") {
 				get_file(p, item, function (data) {
 					markdown("#head_md", data);
-          $("img").addClass("img-fluid")
+					$("img").addClass("img-fluid")
+					
+					//Remove .img-fluid from logo
+					let logoElement = document.querySelector('.mainLogo');
+					logoElement.classList.remove('img-fluid');
 				});
 			}
 			var ext = p.split('.').pop().toLowerCase();
