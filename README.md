@@ -14,7 +14,7 @@ Com a sua doação, poderemos aumentar o nosso caixa disponível para a postagem
 
 ![](https://github.com/projetostudenten/Google-Drive-Index/blob/master/images/logo_pix.png?raw=true)
 
-Nossa chave PIX: ```d8168f3a-a119-49a7-a37c-3963b5fe1f3c```
+Nossa chave PIX: ```doe@drive.studenten.ga```
 
 ## Perguntas frequentes
 
@@ -25,16 +25,6 @@ Nossa chave PIX: ```d8168f3a-a119-49a7-a37c-3963b5fe1f3c```
 **3) Como faço para encontrar um curso?** Utilize a barra de pesquisa para procurar o que deseja. Mas atenção: a pesquisa só funciona no drive atual. Ou seja, se você está no drive "Arquivos Principais", a pesquisa só irá lhe mostrar os arquivos que estão presentes no drive "Arquivos Principais". Portanto, se você não encontrar o que está procurando em um drive, você pode selecionar o outro no menu "Drives disponíveis" e repetir a pesquisa.
 
 **4) Posso obter acesso aos arquivos diretamente no Google Drive?** NÃO. Pedimos gentilmente que você não nos envie mensagens solicitando acesso ao Google Drive. Encerramos o acesso ao Google Drive com o objetivo de previnir problemas. Ademais, manter os arquivos neste site possibilita a manutenção do anonimato da equipe Studenten. Portanto, não insista.
-
-## Equipe Studenten
-
-**Administradores**
-* El Patrón (Administrador geral) 
-* Raven Claw (Administradora fundadora, responsável pela TI)
-
-**Moderadores**
-
-Davi, Darwin, Prince Andrews, zFarinha, Thamires, Gigi, Ana Paula e Marianna.
 
 ## Créditos
 
