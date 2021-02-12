@@ -144,8 +144,8 @@ function nav(path) {
 	}
 
 	html += `</div></li><li class="nav-item">
-    <a href="https://forum.studenten.ga" target="_blank">
-		<button type="button" class="btn btn-danger btn-lg">Fórum</button>
+    <a href="https://forum.studenten.ga" target="_blank" style="margin: 0.5em;">
+		<button type="button" class="btn btn-danger">Fórum</button>
 	</a>
   </li>`;
 
