@@ -783,7 +783,7 @@ function file_audio(path) {
 // Document display |pdf|docx|docm|dot|dotx|dotm|rtf|odt|xlsx|xlsm|xlt|xltx|xltm|ods|csv|tsv|tab|pptx|pptm|pps|ppsx|ppsm|pot|potx|potm|odp|wmf|emf|doc|xls|ppt|
 function file_pdf(path) {
 	const url = window.location.origin + path;
-	//const inline_url = `${url}?inline=true`
+	const inline_url = `${url}?inline=true`
 	const file_name = decodeURI(path.slice(path.lastIndexOf('/') + 1, path.length))
 	var content = `
   <div class="container"><br>
@@ -792,8 +792,8 @@ function file_pdf(path) {
   <div class="alert alert-danger" id="folderne" role="alert"></div><script>document.getElementById("folderne").innerHTML=decodeURI(this.window.location.href.substring(window.location.href.lastIndexOf('/',window.location.href.lastIndexOf('/')+1))).replace('/','').replace('?a=view','');</script>
   </div>
 
-  <object data-v-59e039ae="" data="https://docs.google.com/viewer?url=${url}" type="application/pdf" name="file.pdf" height="600px">
-  	<embed class="embed-responsive" data-v-59e039ae="" src="https://docs.google.com/viewer?url=${url}" type="application/pdf" height="600px">
+  <object data-v-59e039ae="" data="${inline_url}" type="application/pdf" name="file.pdf" height="600px">
+  	<embed class="embed-responsive" data-v-59e039ae="" src="${inline_url}" type="application/pdf" height="600px">
   </object>
   
   <p class="card-text text-center"><a href="${url}" class="btn btn-primary">Download</a></p><br>
